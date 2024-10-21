@@ -23,19 +23,20 @@ body {
 /* Loader */
 .loader {
   background: whitesmoke;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   position: fixed;
   z-index: 10;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 /* Navigation */
 .navigation-container {
   position: fixed;
-  top: 0;
+  top: -20px;
+  border-top: 20px solid whitesmoke;
 }
 
 .navigation-items {
@@ -44,10 +45,10 @@ body {
 }
 
 .background {
-  background: whitesmoke;
   position: fixed;
   right: 0;
   width: 100%;
+  background: whitesmoke;
   height: 60px;
   z-index: -1;
 }
@@ -59,7 +60,7 @@ body {
 }
 
 .clickable:hover {
-  color: rgb(22, 111, 201);
+  color: rgb(0, 99, 199);
 }
 
 /* Images Container */
@@ -104,7 +105,7 @@ body {
   transition: 0.3s;
   position: fixed;
   bottom: 25px;
-  right: 25px;
+  right: 50px;
 }
 
 /* Hidden */

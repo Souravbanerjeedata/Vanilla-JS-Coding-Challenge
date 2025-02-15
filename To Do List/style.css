@@ -75,7 +75,8 @@ ul li {
   padding: 12px 8px 1px 50px;
   user-select: none;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  position: relative;
 }
 
 ul li::before {
@@ -99,4 +100,18 @@ ul li.checked {
 ul li.checked::before {
   content: '';
   background-image: url(./images/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 25px;
+  color: #555;
+  padding: 5px 15px;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background-color: #edeef0;
 }

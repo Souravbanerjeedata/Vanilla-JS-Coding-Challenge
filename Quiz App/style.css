@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', serif;
+  background-color: #03284a;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 540px;
+  margin: 100px auto 0;
+  border-radius: 8px;
+  padding: 30px 25px;
+}
+
+.container h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #03284a;
+  border-bottom: 1px solid #064077;
+  padding-bottom: 25px;
+}
+.question-section h2 {
+  color: #03284a;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px auto 10px;
+}
+
+.btn {
+  display: block;
+  border: 1px solid #064077;
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #03284a;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #212529;
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#nxt-btn {
+  font-family: inherit;
+  border: 0;
+  background-color: #03284a;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 20px auto 0;
+  display: none;
+  font-weight: 500;
+  width: 130px;
+}
+
+.correct {
+  background: #9aeabc;
+}
+
+.incorrect {
+  background: #ff9393;
+}

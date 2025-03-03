@@ -75,3 +75,15 @@ h1 span {
   cursor: pointer;
   background-position: calc(100% - 10px);
 }
+
+#result {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#result span {
+  color: #ffff76;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 0 5px;
+}

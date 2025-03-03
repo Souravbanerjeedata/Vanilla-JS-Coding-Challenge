@@ -12,9 +12,54 @@
         <h1>JavaScript<br /><span>Age Calculator</span></h1>
         <div class="input-box">
           <input type="date" id="date" />
-          <button>Calculate</button>
+          <button onclick="calculateAge()">Calculate</button>
         </div>
+        <p id="result"></p>
       </div>
     </div>
+    <script>
+      let inputDate = document.getElementById('date');
+      inputDate.max = new Date().toISOString().split('T')[0];
+      function calculateAge() {
+        // Birth date
+        let birthDate = new Date(inputDate.value);
+        let birthDay = birthDate.getDate();
+        let birthMonth = birthDate.getMonth() + 1;
+        let birthYear = birthDate.getFullYear();
+        // Current date
+        let currentDate = new Date();
+        let currentDay = currentDate.getDate();
+        let currentMonth = currentDate.getMonth() + 1;
+        let currentYear = currentDate.getFullYear();
+
+        let resultDay, resultMonth, resultYear;
+        resultYear = currentYear - birthYear;
+
+        if (currentMonth >= birthMonth) {
+          resultMonth = currentMonth - birthMonth;
+        } else {
+          resultYear--;
+          resultMonth = 12 + (currentMonth - birthMonth);
+        }
+
+        if (currentDay >= birthDay) {
+          resultDay = currentDay - birthDay;
+        } else {
+          resultMonth--;
+          resultDay =
+            getDaysInMonth(birthYear, birthMonth) + (currentDay - birthDay);
+        }
+        if (resultMonth < 0) {
+          resultMonth = 11;
+          resultYear--;
+        }
+        let result = document.getElementById('result');
+        result.innerHTML = `You are <span>${resultYear}</span> years, <span>${resultMonth}</span> months and <span>${resultDay}</span> days old`;
+      }
+
+      function getDaysInMonth(month, year) {
+        return new Date(year, month, 0).getDate();
+      }
+    </script>
   </body>
 </html>

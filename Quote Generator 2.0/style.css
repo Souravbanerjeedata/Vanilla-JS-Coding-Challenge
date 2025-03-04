@@ -27,6 +27,7 @@ body {
 
 .generator h2 {
   font-size: 26px;
+  font-weight: 500;
   margin-bottom: 10px;
   position: relative;
 }
@@ -62,6 +63,7 @@ body {
   display: block;
   margin-top: 10px;
   position: relative;
+  color: #333;
 }
 
 .generator span::before {
@@ -90,6 +92,7 @@ body {
   color: #fff;
   border-radius: 30px;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .btn-box button:nth-child(2) {
@@ -103,8 +106,8 @@ body {
   font-weight: 700;
 }
 
-.btn-box button svg {
-  width: 20px;
+.btn-box button img {
+  width: 25px;
   height: 20px;
   margin-right: 5px;
 }

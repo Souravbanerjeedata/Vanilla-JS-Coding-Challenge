@@ -62,6 +62,7 @@ small {
   position: absolute;
   left: 1px;
   bottom: -18px;
+  font-size: 12px;
 }
 
 button {

@@ -18,7 +18,7 @@
       <h1>Password Generator</h1>
       <div class="password-container">
         <input type="text" id="password" readonly />
-        <i class="far fa-copy"></i>
+        <i class="far fa-copy" id="copy-btn"></i>
       </div>
       <div class="options">
         <!-- password length -->
@@ -26,7 +26,7 @@
           <label for="password-length">Password Length</label>
           <div class="range-container">
             <input type="range" id="length" min="6" max="24" value="12" />
-            <span id="range-value">12</span>
+            <span id="length-value">12</span>
           </div>
         </div>
         <!-- uppercase -->
@@ -51,7 +51,7 @@
         </div>
       </div>
       <button id="generate-btn">
-        <i class="fas fa-key"></i>Generate Password
+        <i class="fas fa-key"></i> Generate Password
       </button>
       <div class="strength-container">
         <p>Password Strength: <span id="strength-label">Medium</span></p>

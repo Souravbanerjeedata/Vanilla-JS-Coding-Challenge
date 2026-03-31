@@ -1,7 +1,7 @@
 <div align="center">
 
 ![Vanilla JS](https://img.shields.io/badge/Vanilla%20JS-100%25-blue?style=for-the-badge&logo=javascript&logoColor=yellow)
-![Challenges](https://img.shields.io/badge/40+%20Challenges-Completed-green?style=for-the-badge&logo=github&logoColor=white)
+![Challenges](https://img.shields.io/badge/30+%20Challenges-Completed-green?style=for-the-badge&logo=github&logoColor=white)
 
 # Vanilla JS Coding Challenge 🚀
 
